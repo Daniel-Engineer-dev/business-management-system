@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title description">
+  <title id="title">Sơ đồ các thành phần chính của solution QTKD</title>
+  <desc id="description">HTTP client gọi Controllers, Controllers sử dụng QtkdDbContext để truy cập PostgreSQL. Models được sử dụng bởi Controllers và Data. Configurations, SeedData và Migrations cấu hình database.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 15px Arial, sans-serif; fill: #475569; }
+      .box-title { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .box-text { font: 400 14px Arial, sans-serif; fill: #334155; }
+      .group-title { font: 700 17px Arial, sans-serif; fill: #1e3a8a; }
+      .arrow { stroke: #334155; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .support-arrow { stroke: #64748b; stroke-width: 2; stroke-dasharray: 7 6; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" fill="#f8fafc" />
+  <text x="600" y="48" text-anchor="middle" class="title">Các thành phần chính của solution QTKD</text>
+  <text x="600" y="76" text-anchor="middle" class="subtitle">ASP.NET Core Web API · Entity Framework Core · PostgreSQL</text>
+
+  <rect x="35" y="120" width="1130" height="485" rx="18" fill="#ffffff" stroke="#93c5fd" stroke-width="2" />
+  <text x="60" y="152" class="group-title">QTKD.Api</text>
+
+  <rect x="70" y="205" width="190" height="105" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+  <text x="165" y="242" text-anchor="middle" class="box-title">HTTP Client</text>
+  <text x="165" y="270" text-anchor="middle" class="box-text">Gửi request / nhận response</text>
+
+  <rect x="335" y="190" width="225" height="135" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <text x="447" y="227" text-anchor="middle" class="box-title">Controllers</text>
+  <text x="447" y="257" text-anchor="middle" class="box-text">CustomersController</text>
+  <text x="447" y="279" text-anchor="middle" class="box-text">ContractsController</text>
+  <text x="447" y="301" text-anchor="middle" class="box-text">PriceListsController</text>
+
+  <rect x="640" y="190" width="225" height="135" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2" />
+  <text x="752" y="227" text-anchor="middle" class="box-title">QtkdDbContext</text>
+  <text x="752" y="257" text-anchor="middle" class="box-text">Theo dõi entity</text>
+  <text x="752" y="279" text-anchor="middle" class="box-text">Tạo và thực thi truy vấn</text>
+  <text x="752" y="301" text-anchor="middle" class="box-text">EF Core + Npgsql</text>
+
+  <rect x="945" y="205" width="180" height="105" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2" />
+  <text x="1035" y="242" text-anchor="middle" class="box-title">PostgreSQL</text>
+  <text x="1035" y="270" text-anchor="middle" class="box-text">Lưu bảng và dữ liệu</text>
+
+  <path d="M260 257 L335 257" class="arrow" />
+  <path d="M560 257 L640 257" class="arrow" />
+  <path d="M865 257 L945 257" class="arrow" />
+
+  <rect x="335" y="420" width="225" height="115" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="447" y="458" text-anchor="middle" class="box-title">Models</text>
+  <text x="447" y="486" text-anchor="middle" class="box-text">Customer · Contract</text>
+  <text x="447" y="508" text-anchor="middle" class="box-text">PriceList · PriceItem</text>
+
+  <rect x="640" y="395" width="300" height="165" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="2" />
+  <text x="790" y="432" text-anchor="middle" class="box-title">Data</text>
+  <text x="790" y="462" text-anchor="middle" class="box-text">Configurations: ánh xạ entity → bảng</text>
+  <text x="790" y="486" text-anchor="middle" class="box-text">SeedData: dữ liệu mẫu</text>
+  <text x="790" y="510" text-anchor="middle" class="box-text">Migrations: tạo/cập nhật database</text>
+  <text x="790" y="534" text-anchor="middle" class="box-text">QtkdDbContext: điểm truy cập dữ liệu</text>
+
+  <path d="M447 420 L447 335" class="support-arrow" />
+  <path d="M560 478 L640 478" class="support-arrow" />
+  <path d="M752 395 L752 335" class="support-arrow" />
+  <path d="M940 478 C1035 478 1035 400 1035 320" class="support-arrow" />
+
+  <text x="600" y="630" text-anchor="middle" class="subtitle">Mũi tên liền: luồng xử lý request · Mũi tên đứt: quan hệ cấu hình và phụ thuộc</text>
+</svg>
