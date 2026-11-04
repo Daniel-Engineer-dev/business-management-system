@@ -23,6 +23,9 @@ internal static class SeedData
             CustomerId = CustomerMinhPhatId,
             StartDate = new DateOnly(2026, 10, 1),
             EndDate = new DateOnly(2027, 9, 30),
+            ServiceGroup = "Dịch vụ cảng",
+            ContentSummary = null,
+            AttachmentReference = null,
             Status = ContractStatus.Draft
         });
 

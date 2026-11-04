@@ -1,12 +1,14 @@
-# QTKD API — Tuần 5
+# QTKD API — Tuần 6
 
-Nền tảng Web API cho hệ thống quản trị kinh doanh, sử dụng ASP.NET Core, Entity Framework Core và PostgreSQL.
+Web API quản trị kinh doanh được phát triển tiếp từ tuần 5, sử dụng ASP.NET Core, Entity Framework Core và PostgreSQL. Phiên bản tuần 6 bổ sung CRUD nghiệp vụ cho Customer, Contract, Pricing và luồng US03 gửi hợp đồng trình duyệt.
 
 ## Các thành phần chính của solution
 
 ![Sơ đồ các thành phần chính của solution QTKD](docs/solution-components.svg)
 
-- `Controllers`: nhận HTTP request, truy vấn dữ liệu và trả HTTP response.
+- `Controllers`: nhận HTTP request, kiểm tra dữ liệu đầu vào và trả HTTP response.
+- `Contracts`: request/response model của API.
+- `Services/ContractSubmissionService`: kiểm tra CTR-02, chống gửi lặp, tạo yêu cầu phê duyệt, đổi trạng thái và ghi lịch sử.
 - `Models`: định nghĩa các entity nghiệp vụ.
 - `Data/QtkdDbContext`: cầu nối giữa ứng dụng và PostgreSQL qua EF Core/Npgsql.
 - `Data/Configurations`: cấu hình bảng, quan hệ, index và constraint.
@@ -123,6 +125,8 @@ dotnet ef database update --project QTKD.Api --startup-project QTKD.Api
 dotnet run --project QTKD.Api
 ```
 
+Migration bổ sung của tuần 6 là `Week06ContractSubmission`.
+
 Nếu muốn dùng database hoặc tài khoản khác, đặt connection string trước khi chạy migration và API.
 
 Linux/macOS:
@@ -137,11 +141,34 @@ Windows PowerShell:
 $env:ConnectionStrings__QTKD="Host=localhost;Port=5432;Database=qtkd;Username=postgres;Password=your_password"
 ```
 
-## API đọc dữ liệu mẫu
+## API tuần 6
 
 - `GET /health`
-- `GET /api/customers` và `GET /api/customers/{id}`
-- `GET /api/contracts` và `GET /api/contracts/{id}`
-- `GET /api/price-lists` và `GET /api/price-lists/{id}`
+- Customer: `POST /api/customers`, `GET /api/customers`, `GET /api/customers/{id}`, `PUT /api/customers/{id}`.
+- Contract: `POST /api/contracts`, `GET /api/contracts`, `GET /api/contracts/{id}`, `PUT /api/contracts/{id}`.
+- US03: `POST /api/contracts/{id}/submit`.
+- Pricing: `POST /api/price-lists`, `GET /api/price-lists`, `GET /api/price-lists/{id}`.
+- PriceItem: `POST /api/price-lists/{id}/items`, `GET /api/price-lists/{id}/items`.
+
+Submit yêu cầu các header sau:
+
+```http
+X-User-Role: Sales
+X-User-Id: sales-01
+Idempotency-Key: submit-hd-2026-018-v1
+```
+
+`X-User-Role` là mô phỏng quyền trong phạm vi tuần 6; hệ thống xác thực/ủy quyền thật chưa thuộc phạm vi bài. Cùng một `Idempotency-Key` sẽ trả lại cùng `approvalId` và không tạo phiên phê duyệt thứ hai.
+
+Vì Phase 1 chưa chốt danh sách nội dung/tệp bắt buộc, bản demo dùng hai giả định có chủ đích:
+
+- `ContentSummary` không được trống.
+- `AttachmentReference` không được trống.
+
+Hai trường này chỉ mô phỏng CTR-02 và cần được thay bằng danh mục chính thức khi nghiệp vụ xác nhận.
+
+Request/response và thứ tự demo đầy đủ nằm trong `QTKD.Api/QTKD.Api.http`. Báo cáo thực hiện nằm tại `BAO_CAO_TH6.md`.
+
+Kịch bản trình bày có lời thoại và thời lượng từng bước nằm tại `docs/KICH_BAN_DEMO_5_PHUT.md`.
 
 Seed data được đưa vào database qua EF Core migration, gồm khách hàng, hợp đồng `HD-2026-018`, bảng giá và các dòng giá mẫu. Có thể dùng file `QTKD.Api/QTKD.Api.http` để gọi thử API.

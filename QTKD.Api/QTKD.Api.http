@@ -1,19 +1,92 @@
 @host = http://localhost:5085
+@customerId = 10000000-0000-0000-0000-000000000001
+@contractId = 20000000-0000-0000-0000-000000000001
+@priceListId = 30000000-0000-0000-0000-000000000001
 
 GET {{host}}/health
 Accept: application/json
 
-###
-
+### Customer: danh sách
 GET {{host}}/api/customers
 Accept: application/json
 
-###
+### Customer: tạo
+POST {{host}}/api/customers
+Content-Type: application/json
 
+{
+  "name": "Công ty Tuần 6",
+  "status": "Active"
+}
+
+### Customer: cập nhật
+PUT {{host}}/api/customers/{{customerId}}
+Content-Type: application/json
+
+{
+  "name": "Công ty Minh Phát",
+  "status": "Active"
+}
+
+### Contract: danh sách
 GET {{host}}/api/contracts
 Accept: application/json
 
-###
+### Contract: tạo Draft còn thiếu điều kiện CTR-02
+POST {{host}}/api/contracts
+Content-Type: application/json
 
-GET {{host}}/api/price-lists
+{
+  "contractNo": "HD-2026-019",
+  "customerId": "{{customerId}}",
+  "startDate": "2026-11-03",
+  "endDate": "2027-11-02",
+  "serviceGroup": "Dịch vụ cảng"
+}
+
+### US03: gửi thiếu nội dung/tệp -> 400, hợp đồng vẫn Draft
+POST {{host}}/api/contracts/{{contractId}}/submit
+X-User-Role: Sales
+X-User-Id: sales-01
+Idempotency-Key: submit-hd-2026-018-v1
+
+### Contract: bổ sung nội dung/tệp giả định cho CTR-02
+PUT {{host}}/api/contracts/{{contractId}}
+Content-Type: application/json
+
+{
+  "customerId": "{{customerId}}",
+  "startDate": "2026-10-01",
+  "endDate": "2027-09-30",
+  "serviceGroup": "Dịch vụ cảng",
+  "contentSummary": "Cung cấp dịch vụ xếp dỡ và lưu kho.",
+  "attachmentReference": "contracts/HD-2026-018.pdf"
+}
+
+### US03: gửi hợp lệ -> 200 PendingApproval; gọi lại trả cùng approvalId
+POST {{host}}/api/contracts/{{contractId}}/submit
+X-User-Role: Sales
+X-User-Id: sales-01
+Idempotency-Key: submit-hd-2026-018-v1
+
+### Pricing: tạo PriceList
+POST {{host}}/api/price-lists
+Content-Type: application/json
+
+{
+  "name": "Bảng giá dịch vụ 2027",
+  "effectiveDate": "2027-01-01"
+}
+
+### Pricing: thêm PriceItem
+POST {{host}}/api/price-lists/{{priceListId}}/items
+Content-Type: application/json
+
+{
+  "serviceCode": "PORT-DELIVERY",
+  "unitPrice": 750000
+}
+
+### Pricing: xem PriceItem
+GET {{host}}/api/price-lists/{{priceListId}}/items
 Accept: application/json
