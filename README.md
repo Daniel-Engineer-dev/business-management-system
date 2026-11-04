@@ -4,40 +4,80 @@ Web API quản trị kinh doanh được phát triển tiếp từ tuần 5, s�
 
 ## Các thành phần chính của solution
 
-![Sơ đồ các thành phần chính của solution QTKD](docs/solution-components.svg)
+```mermaid
+flowchart LR
+    Client[HTTP Client] --> Controllers[Controllers]
+    Controllers --> ApiContracts[Contracts / DTOs]
+    Controllers --> SubmissionService[ContractSubmissionService]
+    Controllers --> DbContext[QtkdDbContext]
+    SubmissionService --> DbContext
+    DbContext --> Models[Models / Entities]
+    Configurations[Entity Configurations] --> DbContext
+    Migrations[EF Core Migrations] --> Database[(PostgreSQL)]
+    DbContext --> Database
+```
 
-- `Controllers`: nhận HTTP request, kiểm tra dữ liệu đầu vào và trả HTTP response.
-- `Contracts`: request/response model của API.
-- `Services/ContractSubmissionService`: kiểm tra CTR-02, chống gửi lặp, tạo yêu cầu phê duyệt, đổi trạng thái và ghi lịch sử.
-- `Models`: định nghĩa các entity nghiệp vụ.
-- `Data/QtkdDbContext`: cầu nối giữa ứng dụng và PostgreSQL qua EF Core/Npgsql.
-- `Data/Configurations`: cấu hình bảng, quan hệ, index và constraint.
-- `Data/SeedData` và `Data/Migrations`: định nghĩa dữ liệu mẫu và lịch sử thay đổi database.
+- `QTKD.Api/Controllers`: cung cấp API Customer, Contract, PriceList và PriceItem; kiểm tra request và chuyển kết quả thành HTTP response.
+- `QTKD.Api/Contracts`: chứa các DTO request/response, tách dữ liệu API khỏi entity lưu trong database.
+- `QTKD.Api/Services/ContractSubmissionService`: xử lý US03, kiểm tra trạng thái và CTR-02, chống gửi lặp, tạo yêu cầu phê duyệt, chuyển sang `PendingApproval` và ghi lịch sử.
+- `QTKD.Api/Models`: định nghĩa các entity `Customer`, `Contract`, `ApprovalRequest`, `ContractHistory`, `PriceList` và `PriceItem`.
+- `QTKD.Api/Data/QtkdDbContext`: quản lý các `DbSet` và kết nối PostgreSQL thông qua EF Core/Npgsql.
+- `QTKD.Api/Data/Configurations`: cấu hình tên bảng, quan hệ, độ dài trường, unique index và check constraint.
+- `QTKD.Api/Data/SeedData`: cung cấp Customer, Contract, PriceList và PriceItem mẫu.
+- `QTKD.Api/Data/Migrations`: chứa migration ban đầu và migration `Week06ContractSubmission` của tuần 6.
+- `QTKD.Api/Program.cs`: đăng ký controller, JSON enum converter, DbContext, submission service và các endpoint nền tảng.
 
 ## Sơ đồ dữ liệu
 
 ```mermaid
 erDiagram
     CUSTOMER ||--o{ CONTRACT : has
-    PRICE_LIST ||--|{ PRICE_ITEM : contains
+    CONTRACT ||--o| APPROVAL_REQUEST : creates
+    CONTRACT ||--o{ CONTRACT_HISTORY : records
+    PRICE_LIST ||--o{ PRICE_ITEM : contains
+
     CUSTOMER {
         uuid Id PK
         string Name
         string Status
     }
+
     CONTRACT {
         uuid Id PK
         string ContractNo UK
         uuid CustomerId FK
         date StartDate
         date EndDate
+        string ServiceGroup
+        string ContentSummary
+        string AttachmentReference
         string Status
     }
+
+    APPROVAL_REQUEST {
+        uuid Id PK
+        uuid ContractId FK
+        string IdempotencyKey
+        string SubmittedBy
+        datetime SubmittedAtUtc
+        string Status
+    }
+
+    CONTRACT_HISTORY {
+        uuid Id PK
+        uuid ContractId FK
+        string Action
+        string PerformedBy
+        datetime OccurredAtUtc
+        string Details
+    }
+
     PRICE_LIST {
         uuid Id PK
         string Name
         date EffectiveDate
     }
+
     PRICE_ITEM {
         uuid Id PK
         uuid PriceListId FK
@@ -45,6 +85,8 @@ erDiagram
         decimal UnitPrice
     }
 ```
+
+Trong phạm vi tuần 6, mỗi Contract có tối đa một `ApprovalRequest`; unique index trên `ContractId` và cặp `ContractId`–`IdempotencyKey` ngăn tạo phiên phê duyệt trùng. Một Contract có thể có nhiều dòng `ContractHistory`. `ContentSummary`, `AttachmentReference` và `ServiceGroup` cho phép `NULL` khi lưu nháp; hai trường đầu phải có giá trị trước khi submit theo giả định demo CTR-02.
 
 ## Chạy ứng dụng
 
