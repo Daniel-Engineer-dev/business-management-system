@@ -1,8 +1,19 @@
-# QTKD API — Tuần 6
+# QTKD API — Tuần 7
 
-Web API quản trị kinh doanh được phát triển tiếp từ tuần 5, sử dụng ASP.NET Core, Entity Framework Core và PostgreSQL. Phiên bản tuần 6 bổ sung CRUD nghiệp vụ cho Customer, Contract, Pricing và luồng US03 gửi hợp đồng trình duyệt.
+Tiếp tục solution .NET 10, ASP.NET Core Web API, Entity Framework Core và PostgreSQL từ TH6. Tuần 7 bổ sung xUnit, kiểm chứng TC01–TC08 và sửa lỗi phản hồi khi client yêu cầu chuyển thẳng sang Approved.
 
-## Các thành phần chính của solution
+Thư mục TH7 kế thừa mã nguồn và thư mục Git của TH6 theo yêu cầu tạo thư mục riêng. Các migration tuần 5–6 được giữ để chạy trên database cũ hoặc tạo database mới.
+
+## Cấu trúc
+
+- `QTKD.Api` chứa controllers, contracts, services, entities và EF Core migrations.
+- `tests/QTKD.Tests/Unit` kiểm tra CTR-01, CTR-02 và CTR-03 bằng các hàm nghiệp vụ mà API/service đang sử dụng.
+- `tests/QTKD.Tests/Integration` gọi API qua WebApplicationFactory và xác minh trực tiếp PostgreSQL.
+- `docs/test-results/week07.trx` lưu kết quả kiểm thử thực tế.
+- `BAO_CAO_TH7.md` mô tả yêu cầu, cách thực hiện, lỗi sửa và bảng TC01–TC08.
+- `requirements/general/TH_Phase2_QTKD.pdf` chứa đề bài gốc, mục 5 là tuần 7.
+
+## Các thành phần chính
 
 ```mermaid
 flowchart LR
@@ -10,6 +21,7 @@ flowchart LR
     Controllers --> ApiContracts[Contracts / DTOs]
     Controllers --> SubmissionService[ContractSubmissionService]
     Controllers --> DbContext[QtkdDbContext]
+    SubmissionService --> Rules[ContractRules]
     SubmissionService --> DbContext
     DbContext --> Models[Models / Entities]
     Configurations[Entity Configurations] --> DbContext
@@ -17,15 +29,10 @@ flowchart LR
     DbContext --> Database
 ```
 
-- `QTKD.Api/Controllers`: cung cấp API Customer, Contract, PriceList và PriceItem; kiểm tra request và chuyển kết quả thành HTTP response.
-- `QTKD.Api/Contracts`: chứa các DTO request/response, tách dữ liệu API khỏi entity lưu trong database.
-- `QTKD.Api/Services/ContractSubmissionService`: xử lý US03, kiểm tra trạng thái và CTR-02, chống gửi lặp, tạo yêu cầu phê duyệt, chuyển sang `PendingApproval` và ghi lịch sử.
-- `QTKD.Api/Models`: định nghĩa các entity `Customer`, `Contract`, `ApprovalRequest`, `ContractHistory`, `PriceList` và `PriceItem`.
-- `QTKD.Api/Data/QtkdDbContext`: quản lý các `DbSet` và kết nối PostgreSQL thông qua EF Core/Npgsql.
-- `QTKD.Api/Data/Configurations`: cấu hình tên bảng, quan hệ, độ dài trường, unique index và check constraint.
-- `QTKD.Api/Data/SeedData`: cung cấp Customer, Contract, PriceList và PriceItem mẫu.
-- `QTKD.Api/Data/Migrations`: chứa migration ban đầu và migration `Week06ContractSubmission` của tuần 6.
-- `QTKD.Api/Program.cs`: đăng ký controller, JSON enum converter, DbContext, submission service và các endpoint nền tảng.
+- `QTKD.Api/Controllers` cung cấp API Customer, Contract và Pricing; kiểm tra request và trả HTTP response.
+- `QTKD.Api/Contracts` chứa các DTO request/response, tách dữ liệu API khỏi entity.
+- `ContractSubmissionService` xử lý gửi hợp đồng, chống gửi lặp, tạo yêu cầu phê duyệt và ghi lịch sử; `ContractRules` tập trung các điều kiện CTR-01–03.
+- `QtkdDbContext`, configurations và migrations quản lý mô hình dữ liệu PostgreSQL. `SeedData` tạo dữ liệu mẫu.
 
 ## Sơ đồ dữ liệu
 
@@ -86,131 +93,70 @@ erDiagram
     }
 ```
 
-Trong phạm vi tuần 6, mỗi Contract có tối đa một `ApprovalRequest`; unique index trên `ContractId` và cặp `ContractId`–`IdempotencyKey` ngăn tạo phiên phê duyệt trùng. Một Contract có thể có nhiều dòng `ContractHistory`. `ContentSummary`, `AttachmentReference` và `ServiceGroup` cho phép `NULL` khi lưu nháp; hai trường đầu phải có giá trị trước khi submit theo giả định demo CTR-02.
+Mỗi Contract có tối đa một ApprovalRequest và có thể có nhiều dòng ContractHistory. ContentSummary, AttachmentReference và ServiceGroup có thể để trống khi lưu Draft; hai trường đầu cần giá trị trước khi submit theo giả định demo CTR-02.
 
-## Chạy ứng dụng
+## Cấu hình và chạy API
 
-Yêu cầu chung: .NET SDK 10 và một PostgreSQL server đang hoạt động.
-
-### Chuẩn bị PostgreSQL trên Ubuntu/WSL
-
-Khởi động dịch vụ và đăng nhập bằng system user `postgres`:
-
-```bash
-sudo service postgresql start
-sudo -u postgres psql
-```
-
-PostgreSQL trên Ubuntu thường sử dụng `peer authentication` cho local socket, vì vậy chạy `psql -U postgres` từ user Linux thông thường có thể bị từ chối.
-
-Nếu đã đặt password cho role `postgres`, có thể buộc kết nối TCP thay vì local socket:
-
-```bash
-psql -h localhost -U postgres
-```
-
-### Chuẩn bị PostgreSQL trên Windows
-
-1. Mở ứng dụng **Services** (`services.msc`) và bảo đảm dịch vụ có tên bắt đầu bằng `postgresql` đang ở trạng thái **Running**. Có thể kiểm tra trong PowerShell:
-
-```powershell
-Get-Service -Name "postgresql*"
-```
-
-Nếu dịch vụ chưa chạy, mở PowerShell bằng quyền Administrator và chạy lệnh sau, trong đó thay `<service-name>` bằng tên nhận được ở bước trên:
-
-```powershell
-Start-Service -Name "<service-name>"
-```
-
-2. Mở **SQL Shell (psql)** từ Start Menu. Giữ các giá trị mặc định cho server `localhost`, database `postgres`, port `5432`, username `postgres`, sau đó nhập password đã đặt khi cài PostgreSQL.
-
-Nếu lệnh `psql` đã có trong `PATH`, có thể đăng nhập trực tiếp từ PowerShell:
-
-```powershell
-psql -h localhost -U postgres -d postgres
-```
-
-### Tạo database dùng chung cho cả hai môi trường
-
-Sau khi đã vào `psql`, tạo user và database khớp với connection string mặc định của dự án:
+Cần .NET SDK 10 và PostgreSQL đang chạy. Tạo role/database riêng cho ứng dụng bằng tài khoản quản trị PostgreSQL.
 
 ```sql
-CREATE USER qtkd WITH PASSWORD 'qtkd_dev_password';
+CREATE ROLE qtkd LOGIN PASSWORD '<mat-khau-ban-tu-dat>';
 CREATE DATABASE qtkd OWNER qtkd;
-\q
 ```
 
-Nếu user hoặc database đã tồn tại, bỏ qua lệnh tạo tương ứng. Nếu chỉ user đã tồn tại nhưng cần đặt lại password, chạy:
-
-```sql
-ALTER USER qtkd WITH PASSWORD 'qtkd_dev_password';
-```
-
-Đảm bảo PostgreSQL có thể truy cập tại `localhost:5432`.
-
-Kiểm tra tài khoản ứng dụng qua kết nối TCP:
+Tại thư mục TH7, đặt connection string bằng biến môi trường. Ví dụ Bash trên Linux/WSL.
 
 ```bash
-psql -h localhost -U qtkd -d qtkd
-```
-
-Nhập password `qtkd_dev_password` khi được hỏi, sau đó dùng `\q` để thoát.
-
-### Chạy migration và Web API
-
-Trên Ubuntu/WSL hoặc Windows, mở terminal tại thư mục gốc của repository rồi chạy:
-
-```bash
+export ConnectionStrings__QTKD='Host=localhost;Port=5432;Database=qtkd;Username=qtkd;Password=<mat-khau-ban-tu-dat>'
+dotnet restore QTKD.slnx
 dotnet tool restore
 dotnet ef database update --project QTKD.Api --startup-project QTKD.Api
 dotnet run --project QTKD.Api
 ```
 
-Migration bổ sung của tuần 6 là `Week06ContractSubmission`.
-
-Nếu muốn dùng database hoặc tài khoản khác, đặt connection string trước khi chạy migration và API.
-
-Linux/macOS:
-
-```bash
-export ConnectionStrings__QTKD="Host=localhost;Port=5432;Database=qtkd;Username=postgres;Password=your_password"
-```
-
-Windows PowerShell:
+PowerShell đặt biến tương ứng trước khi chạy các lệnh dotnet trên.
 
 ```powershell
-$env:ConnectionStrings__QTKD="Host=localhost;Port=5432;Database=qtkd;Username=postgres;Password=your_password"
+$env:ConnectionStrings__QTKD = 'Host=localhost;Port=5432;Database=qtkd;Username=qtkd;Password=<mat-khau-ban-tu-dat>'
 ```
 
-## API tuần 6
+Dùng URL API in trên console, mở `QTKD.Api/QTKD.Api.http` và chỉnh `@host` nếu cần. File HTTP và `docs/KICH_BAN_DEMO_5_PHUT.md` giữ luồng demo tuần 6. Submit yêu cầu `X-User-Role: Sales`, `X-User-Id` và `Idempotency-Key`.
 
-- `GET /health`
-- Customer: `POST /api/customers`, `GET /api/customers`, `GET /api/customers/{id}`, `PUT /api/customers/{id}`.
-- Contract: `POST /api/contracts`, `GET /api/contracts`, `GET /api/contracts/{id}`, `PUT /api/contracts/{id}`.
-- US03: `POST /api/contracts/{id}/submit`.
-- Pricing: `POST /api/price-lists`, `GET /api/price-lists`, `GET /api/price-lists/{id}`.
-- PriceItem: `POST /api/price-lists/{id}/items`, `GET /api/price-lists/{id}/items`.
+API hỗ trợ tạo/xem/cập nhật Customer và Contract, gửi Contract, tạo/xem PriceList, thêm/xem PriceItem. `GET /health` kiểm tra ứng dụng. Khi POST/PUT Contract có `status` yêu cầu thay đổi trái phép, API trả 409 với `CONTRACT_STATE_INVALID`. POST mặc định Draft, submit chuyển Draft sang PendingApproval.
 
-Submit yêu cầu các header sau:
+## Chạy kiểm thử
 
-```http
-X-User-Role: Sales
-X-User-Id: sales-01
-Idempotency-Key: submit-hd-2026-018-v1
+Unit test chạy độc lập với PostgreSQL.
+
+```bash
+dotnet test QTKD.slnx --filter 'FullyQualifiedName~QTKD.Tests.Unit'
 ```
 
-`X-User-Role` là mô phỏng quyền trong phạm vi tuần 6; hệ thống xác thực/ủy quyền thật chưa thuộc phạm vi bài. Cùng một `Idempotency-Key` sẽ trả lại cùng `approvalId` và không tạo phiên phê duyệt thứ hai.
+Integration test cần PostgreSQL và role có quyền CREATEDB. Trong PostgreSQL quản trị, chuẩn bị role chuyên dùng kiểm thử.
 
-Vì Phase 1 chưa chốt danh sách nội dung/tệp bắt buộc, bản demo dùng hai giả định có chủ đích:
+```sql
+CREATE ROLE qtkd_test LOGIN CREATEDB PASSWORD '<mat-khau-test>';
+```
 
-- `ContentSummary` không được trống.
-- `AttachmentReference` không được trống.
+Bash đặt kết nối tới database quản trị của server kiểm thử rồi chạy toàn bộ test.
 
-Hai trường này chỉ mô phỏng CTR-02 và cần được thay bằng danh mục chính thức khi nghiệp vụ xác nhận.
+```bash
+export QTKD_TEST_ADMIN='Host=127.0.0.1;Port=5432;Database=postgres;Username=qtkd_test;Password=<mat-khau-test>'
+dotnet test QTKD.slnx --logger 'trx;LogFileName=week07.trx' --results-directory docs/test-results
+```
 
-Request/response và thứ tự demo đầy đủ nằm trong `QTKD.Api/QTKD.Api.http`. Báo cáo thực hiện nằm tại `BAO_CAO_TH6.md`.
+PowerShell dùng biến tương ứng.
 
-Kịch bản trình bày có lời thoại và thời lượng từng bước nằm tại `docs/KICH_BAN_DEMO_5_PHUT.md`.
+```powershell
+$env:QTKD_TEST_ADMIN = 'Host=127.0.0.1;Port=5432;Database=postgres;Username=qtkd_test;Password=<mat-khau-test>'
+```
 
-Seed data được đưa vào database qua EF Core migration, gồm khách hàng, hợp đồng `HD-2026-018`, bảng giá và các dòng giá mẫu. Có thể dùng file `QTKD.Api/QTKD.Api.http` để gọi thử API.
+Fixture tạo database có tên `qtkd_test_<GUID>`, chạy migration thật, dùng database đó cho API và truy vấn kiểm chứng, sau đó xóa đúng database đã tạo. Mỗi lần chạy tạo tên mới. Nếu tiến trình bị dừng cưỡng bức, database test có thể còn lại và cần được dọn riêng. Connection string ứng dụng và connection string kiểm thử được cấu hình độc lập.
+
+Trong lần kiểm chứng tại máy này, server tạm chạy tại `127.0.0.1:55437`, role `qtkd_test`, database quản trị `postgres`, xác thực trust trên localhost. Đây cũng là giá trị mặc định của fixture nếu chưa đặt `QTKD_TEST_ADMIN`.
+
+TC06 tự động chạy luồng tạo Customer → Contract Draft thiếu dữ liệu → submit thất bại → bổ sung dữ liệu → submit thành công → GET và truy vấn DB. TC08 kiểm tra gửi lại cùng key và khác key. Test bổ sung kiểm tra submit đồng thời, quyền Sales và Pricing.
+
+## Giả định nghiệp vụ và giới hạn
+
+CTR-02 tiếp tục giả định `ContentSummary` và `AttachmentReference` không trống vì Phase 1 chưa chốt danh mục bắt buộc. Quyền Sales mô phỏng bằng header. Approval hiện tạo một yêu cầu và lịch sử submit. Database test chạy thật, API integration chạy trong TestServer. Demo tương tác và việc clone trên máy khác vẫn cần người nộp bài thực hiện theo hướng dẫn này.

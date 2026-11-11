@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using QTKD.Api.Models;
 
 namespace QTKD.Api.Contracts;
 
@@ -9,7 +10,8 @@ public sealed record CreateContractRequest(
     DateOnly EndDate,
     [MaxLength(100)] string? ServiceGroup,
     [MaxLength(2000)] string? ContentSummary,
-    [MaxLength(500)] string? AttachmentReference);
+    [MaxLength(500)] string? AttachmentReference,
+    ContractStatus? Status = null);
 
 public sealed record UpdateContractRequest(
     Guid CustomerId,
@@ -17,7 +19,8 @@ public sealed record UpdateContractRequest(
     DateOnly EndDate,
     [MaxLength(100)] string? ServiceGroup,
     [MaxLength(2000)] string? ContentSummary,
-    [MaxLength(500)] string? AttachmentReference);
+    [MaxLength(500)] string? AttachmentReference,
+    ContractStatus? Status = null);
 
 public sealed record SubmitContractResponse(
     Guid ContractId,

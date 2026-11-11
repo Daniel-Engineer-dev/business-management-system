@@ -37,14 +37,14 @@ public sealed class ContractSubmissionService(QtkdDbContext dbContext)
             return SubmitContractResult.NotFound();
         }
 
-        if (contract.Status != ContractStatus.Draft)
+        if (!ContractRules.CanTransition(contract.Status, ContractStatus.PendingApproval))
         {
             return SubmitContractResult.Conflict(
                 "CONTRACT_STATE_INVALID",
                 $"Chỉ hợp đồng ở trạng thái Draft mới được gửi. Trạng thái hiện tại: {contract.Status}.");
         }
 
-        var unmetConditions = ValidateCtr02(contract);
+        var unmetConditions = ContractRules.ValidateSubmission(contract);
         if (unmetConditions.Count > 0)
         {
             return SubmitContractResult.Invalid(unmetConditions);
@@ -110,33 +110,7 @@ public sealed class ContractSubmissionService(QtkdDbContext dbContext)
             false));
     }
 
-    private static List<string> ValidateCtr02(Contract contract)
-    {
-        var errors = new List<string>();
 
-        if (contract.Customer is null || contract.Customer.Status != CustomerStatus.Active ||
-            string.IsNullOrWhiteSpace(contract.Customer.Name))
-        {
-            errors.Add("Customer phải tồn tại, có tên và ở trạng thái Active.");
-        }
-
-        if (contract.StartDate == default || contract.EndDate == default || contract.EndDate < contract.StartDate)
-        {
-            errors.Add("Thời hạn hiệu lực phải có đủ ngày bắt đầu/kết thúc và ngày kết thúc không trước ngày bắt đầu.");
-        }
-
-        if (string.IsNullOrWhiteSpace(contract.ContentSummary))
-        {
-            errors.Add("Thiếu nội dung bắt buộc (giả định demo: ContentSummary).");
-        }
-
-        if (string.IsNullOrWhiteSpace(contract.AttachmentReference))
-        {
-            errors.Add("Thiếu tệp bắt buộc (giả định demo: AttachmentReference).");
-        }
-
-        return errors;
-    }
 }
 
 public sealed record SubmitContractResult(

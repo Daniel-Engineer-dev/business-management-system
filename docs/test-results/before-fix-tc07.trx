@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="bedb3c9b-41a0-4787-99fb-4862aa3e0cd6" name="@DESKTOP-OP1BCTV 2026-11-04 12:57:15" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T12:57:15.7924924+07:00" queuing="2026-11-04T12:57:15.7924925+07:00" start="2026-11-04T12:57:12.6524747+07:00" finish="2026-11-04T12:57:15.7988908+07:00" />
+  <TestSettings name="default" id="71c312ac-1d9c-4d40-b1d8-68a92b9016f8">
+    <Deployment runDeploymentRoot="_DESKTOP-OP1BCTV_2026-11-04_12_57_15" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a4339541-9378-4579-8374-49c92e2feb16" testId="dfbbd327-5f9f-b817-b557-8a870dd756b1" testName="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;PUT&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.1306590" startTime="2026-11-04T12:57:15.5664846+07:00" endTime="2026-11-04T12:57:15.6792295+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4339541-9378-4579-8374-49c92e2feb16">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ
+Expected: Conflict
+Actual:   OK</Message>
+          <StackTrace>   at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method) in /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs:line 158
+   at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method) in /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs:line 161
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e3c78d4-51a1-4bcb-8587-cb7b600f362d" testId="9526848c-e6f0-5d05-f2ca-2d23aaaed8ea" testName="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;POST&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:01.0573987" startTime="2026-11-04T12:57:14.4713514+07:00" endTime="2026-11-04T12:57:15.5471031+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e3c78d4-51a1-4bcb-8587-cb7b600f362d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ
+Expected: Conflict
+Actual:   Created</Message>
+          <StackTrace>   at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method) in /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs:line 158
+   at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method) in /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs:line 161
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;PUT&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="dfbbd327-5f9f-b817-b557-8a870dd756b1">
+      <Execution id="a4339541-9378-4579-8374-49c92e2feb16" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC07_DirectApproved_IsExplicitlyRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;POST&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="9526848c-e6f0-5d05-f2ca-2d23aaaed8ea">
+      <Execution id="3e3c78d4-51a1-4bcb-8587-cb7b600f362d" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC07_DirectApproved_IsExplicitlyRejected" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="dfbbd327-5f9f-b817-b557-8a870dd756b1" executionId="a4339541-9378-4579-8374-49c92e2feb16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9526848c-e6f0-5d05-f2ca-2d23aaaed8ea" executionId="3e3c78d4-51a1-4bcb-8587-cb7b600f362d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="0" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.12)
+[xUnit.net 00:00:00.09]   Discovering: QTKD.Tests
+[xUnit.net 00:00:00.16]   Discovered:  QTKD.Tests
+[xUnit.net 00:00:00.19]   Starting:    QTKD.Tests
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/daniel/projects/TH7/QTKD.Api
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 283.2265ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 342.9001ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType1`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 322.6374ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 330.3885ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 262
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType1`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 23.2707ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 24.3624ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+[xUnit.net 00:00:02.45]       Assert.Equal() Failure: Values differ
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[xUnit.net 00:00:02.45]       Expected: Conflict
+[xUnit.net 00:00:02.45]       Actual:   Created
+[xUnit.net 00:00:02.45]       Stack Trace:
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 3.2083ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 3.6066ms
+[xUnit.net 00:00:02.46]         /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs(158,0): at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method)
+[xUnit.net 00:00:02.46]         /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs(161,0): at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method)
+[xUnit.net 00:00:02.46]         --- End of stack trace from previous location ---
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType1`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 5.0214ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 5.3320ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 PUT http://localhost/api/contracts/15fad5ac-653a-47b8-918f-e7c4e00c0c7a - application/json;+charset=utf-8 262
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Update", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, QTKD.Api.Contracts.UpdateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status"
+      FROM contracts AS c
+      WHERE c."Id" = @p
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType1`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Update (QTKD.Api) in 46.6417ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 PUT http://localhost/api/contracts/15fad5ac-653a-47b8-918f-e7c4e00c0c7a - 200 - application/json;+charset=utf-8 53.1115ms
+[xUnit.net 00:00:02.58]       Assert.Equal() Failure: Values differ
+[xUnit.net 00:00:02.58]       Expected: Conflict
+[xUnit.net 00:00:02.58]       Actual:   OK
+[xUnit.net 00:00:02.58]       Stack Trace:
+[xUnit.net 00:00:02.58]         /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs(158,0): at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method)
+[xUnit.net 00:00:02.58]         /home/daniel/projects/TH7/tests/QTKD.Tests/Integration/WorkflowTests.cs(161,0): at QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(String method)
+[xUnit.net 00:00:02.58]         --- End of stack trace from previous location ---
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[xUnit.net 00:00:02.61]   Finished:    QTKD.Tests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-OP1BCTV" outcome="Error" timestamp="2026-11-04T12:57:15.5513853+07:00">
+        <Text>[xUnit.net 00:00:02.45]     QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: "POST") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-OP1BCTV" outcome="Error" timestamp="2026-11-04T12:57:15.6798467+07:00">
+        <Text>[xUnit.net 00:00:02.58]     QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: "PUT") [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

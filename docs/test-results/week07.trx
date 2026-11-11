@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="03a28799-8bea-4989-80f2-5ebfe38775d7" name="@DESKTOP-OP1BCTV 2026-11-04 12:58:17" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T12:58:17.5181056+07:00" queuing="2026-11-04T12:58:17.5181057+07:00" start="2026-11-04T12:58:16.7644146+07:00" finish="2026-11-04T12:58:20.3330581+07:00" />
+  <TestSettings name="default" id="111dc238-2a50-4def-9574-dde562ce63aa">
+    <Deployment runDeploymentRoot="_DESKTOP-OP1BCTV_2026-11-04_12_58_17" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f8577a8c-f9f3-4bb1-ae4d-8e67f84917dc" testId="cd45b635-1a1b-1e64-0d75-59329da6bc8c" testName="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Approved, expected: False)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0001576" startTime="2026-11-04T12:58:17.4780791+07:00" endTime="2026-11-04T12:58:17.4781398+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8577a8c-f9f3-4bb1-ae4d-8e67f84917dc" />
+    <UnitTestResult executionId="814e9367-43dd-428d-9c45-2680a9a07d51" testId="679f8b6c-e560-8f49-173e-5c62478f14f8" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;start&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000106" startTime="2026-11-04T12:58:17.4409284+07:00" endTime="2026-11-04T12:58:17.4409843+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="814e9367-43dd-428d-9c45-2680a9a07d51" />
+    <UnitTestResult executionId="6f04096b-c771-4244-861a-e1a9af6a189a" testId="dc16e1cc-83b6-c411-5e1d-a544a834daff" testName="QTKD.Tests.Integration.WorkflowTests.ConcurrentSubmit_SameKeyCreatesOneResult" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0195621" startTime="2026-11-04T12:58:20.1890929+07:00" endTime="2026-11-04T12:58:20.2089274+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f04096b-c771-4244-861a-e1a9af6a189a" />
+    <UnitTestResult executionId="eb384bf9-3423-4a6f-bbd0-e485ff755bbf" testId="5490668e-55d9-dd76-72ee-c6a5bcc3de13" testName="QTKD.Tests.Integration.WorkflowTests.TC01_CreateCustomer_PersistsAndCanBeRead" computerName="DESKTOP-OP1BCTV" duration="00:00:00.9330283" startTime="2026-11-04T12:58:18.5381310+07:00" endTime="2026-11-04T12:58:19.4714730+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb384bf9-3423-4a6f-bbd0-e485ff755bbf" />
+    <UnitTestResult executionId="26998122-a4e9-4742-89c9-74bab9f094f6" testId="9ecb4594-c16a-a574-4bd1-137daa6da17a" testName="QTKD.Tests.Integration.WorkflowTests.TC05_MissingSubmissionData_ReportsErrorsAndKeepsDraft" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0151113" startTime="2026-11-04T12:58:20.2239300+07:00" endTime="2026-11-04T12:58:20.2393978+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26998122-a4e9-4742-89c9-74bab9f094f6" />
+    <UnitTestResult executionId="b4d9d68a-9cdc-48a5-83de-5b724963d5fd" testId="ee3f44e6-4ceb-23cb-35e7-733af00bb1ec" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_CompleteContractHasNoErrors" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0021274" startTime="2026-11-04T12:58:17.4792153+07:00" endTime="2026-11-04T12:58:17.4792660+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4d9d68a-9cdc-48a5-83de-5b724963d5fd" />
+    <UnitTestResult executionId="cdfe81df-5cf8-4d03-ac73-7684500a472c" testId="541df43d-4ea1-fa82-b10e-90af801d3665" testName="QTKD.Tests.Integration.WorkflowTests.TC02_EmptyCustomer_IsRejectedWithoutInsert" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0074353" startTime="2026-11-04T12:58:20.0177985+07:00" endTime="2026-11-04T12:58:20.0255674+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cdfe81df-5cf8-4d03-ac73-7684500a472c" />
+    <UnitTestResult executionId="717ebe1c-a005-486a-a620-e5ee7efd0c75" testId="a58e25c5-1eeb-d147-300a-1b2ee50cbf19" testName="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: RevisionRequested, expected: True)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000011" startTime="2026-11-04T12:58:17.4790064+07:00" endTime="2026-11-04T12:58:17.4790583+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="717ebe1c-a005-486a-a620-e5ee7efd0c75" />
+    <UnitTestResult executionId="f8869cef-8b9b-4d6f-a5d8-4d3c92a09582" testId="73e8fec5-9e0d-c23c-6058-581051a80c80" testName="QTKD.Tests.Unit.ContractRulesTests.CTR03_OnlyDraftToPendingApprovalIsSupported(from: Draft, to: PendingApproval, expected: True)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000080" startTime="2026-11-04T12:58:17.4777883+07:00" endTime="2026-11-04T12:58:17.4779158+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8869cef-8b9b-4d6f-a5d8-4d3c92a09582" />
+    <UnitTestResult executionId="ef58041f-3dd5-472a-ae4e-ad88191af01d" testId="73af3956-c7e7-bea9-cd9c-3bfad53c9575" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;customer&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000059" startTime="2026-11-04T12:58:17.4405325+07:00" endTime="2026-11-04T12:58:17.4408208+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef58041f-3dd5-472a-ae4e-ad88191af01d" />
+    <UnitTestResult executionId="a0ca25fc-03f8-47c4-8511-1e92373b530d" testId="317f5b89-43d5-be63-4afb-b62386173820" testName="QTKD.Tests.Integration.WorkflowTests.TC03_EditDraft_PersistsChanges" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0144068" startTime="2026-11-04T12:58:20.2090717+07:00" endTime="2026-11-04T12:58:20.2237894+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0ca25fc-03f8-47c4-8511-1e92373b530d" />
+    <UnitTestResult executionId="a80ad56e-a629-48ea-9ce9-8ad82597843f" testId="dd44df80-2590-e45a-5609-5673d83d982f" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;inactive&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000035" startTime="2026-11-04T12:58:17.4412132+07:00" endTime="2026-11-04T12:58:17.4412900+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a80ad56e-a629-48ea-9ce9-8ad82597843f" />
+    <UnitTestResult executionId="8a8902a1-cfbf-40b6-987f-7f4927c96b92" testId="21eab722-1f52-b225-b887-6d16235e6275" testName="QTKD.Tests.Integration.WorkflowTests.TC04_EditPending_IsRejectedWithoutMutation" computerName="DESKTOP-OP1BCTV" duration="00:00:00.1247950" startTime="2026-11-04T12:58:19.8924400+07:00" endTime="2026-11-04T12:58:20.0176101+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a8902a1-cfbf-40b6-987f-7f4927c96b92" />
+    <UnitTestResult executionId="3b4f2dff-38e4-4426-a8dd-25f3dffb57f1" testId="d7813019-c4e8-e565-5821-1352b7c7272a" testName="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: PendingApproval, expected: False)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000011" startTime="2026-11-04T12:58:17.4787732+07:00" endTime="2026-11-04T12:58:17.4788464+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b4f2dff-38e4-4426-a8dd-25f3dffb57f1" />
+    <UnitTestResult executionId="6d65eaf7-edf4-4c94-8405-b0dee3dc0d26" testId="cdfa0e0d-faf2-e5aa-210e-0ac9bf12bdd3" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;name&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000141" startTime="2026-11-04T12:58:17.4402006+07:00" endTime="2026-11-04T12:58:17.4402436+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d65eaf7-edf4-4c94-8405-b0dee3dc0d26" />
+    <UnitTestResult executionId="0edf4b23-7b68-4eb2-842a-2c5885666fc6" testId="bd1c7d77-e918-1666-94bb-5c770ff74888" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;content&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000083" startTime="2026-11-04T12:58:17.4410928+07:00" endTime="2026-11-04T12:58:17.4411401+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0edf4b23-7b68-4eb2-842a-2c5885666fc6" />
+    <UnitTestResult executionId="96526f73-9f85-4854-a79e-ccb10772fa2c" testId="9526848c-e6f0-5d05-f2ca-2d23aaaed8ea" testName="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;POST&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.1164953" startTime="2026-11-04T12:58:19.7164205+07:00" endTime="2026-11-04T12:58:19.8333464+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96526f73-9f85-4854-a79e-ccb10772fa2c" />
+    <UnitTestResult executionId="c05a790a-be72-43fd-9872-0509985f7776" testId="ab379072-96dd-bc34-986a-031b155be3e0" testName="QTKD.Tests.Integration.WorkflowTests.TC08_RepeatedSubmit_CreatesOneApprovalAndHistory" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0264678" startTime="2026-11-04T12:58:20.1621894+07:00" endTime="2026-11-04T12:58:20.1889463+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c05a790a-be72-43fd-9872-0509985f7776" />
+    <UnitTestResult executionId="8760aee0-9725-4e68-889a-cf87bd3271d2" testId="9250afe2-4216-9e7f-3e1a-aaa226d9a484" testName="QTKD.Tests.Integration.WorkflowTests.Pricing_ValidItemPersists_NegativeAndDuplicateAreRejected" computerName="DESKTOP-OP1BCTV" duration="00:00:00.2428897" startTime="2026-11-04T12:58:19.4726801+07:00" endTime="2026-11-04T12:58:19.7162348+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8760aee0-9725-4e68-889a-cf87bd3271d2" />
+    <UnitTestResult executionId="e46e9dbb-d6f8-4cab-a0b3-7983be79975f" testId="feeaf125-4268-78db-47e2-ab7b1a9df9b2" testName="QTKD.Tests.Integration.WorkflowTests.TC06_FullWeek06Demo_RepairThenSubmitAndReadState" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0824255" startTime="2026-11-04T12:58:20.0791564+07:00" endTime="2026-11-04T12:58:20.1620359+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e46e9dbb-d6f8-4cab-a0b3-7983be79975f" />
+    <UnitTestResult executionId="d36a5b11-4346-4192-8b60-edd0ef4ff369" testId="d0b0cf14-1278-051b-4ac7-0fea8f4e7e7c" testName="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Active, expected: False)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000019" startTime="2026-11-04T12:58:17.4786556+07:00" endTime="2026-11-04T12:58:17.4787028+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d36a5b11-4346-4192-8b60-edd0ef4ff369" />
+    <UnitTestResult executionId="fb441fe6-0d79-403a-8e2c-a58db8d65dc1" testId="dfbbd327-5f9f-b817-b557-8a870dd756b1" testName="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;PUT&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0585320" startTime="2026-11-04T12:58:19.8334715+07:00" endTime="2026-11-04T12:58:19.8922802+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb441fe6-0d79-403a-8e2c-a58db8d65dc1" />
+    <UnitTestResult executionId="f350c188-c1b5-4d13-bbc9-2dbad94d83f6" testId="69213107-0898-4075-78c7-55db5859fee0" testName="QTKD.Tests.Integration.WorkflowTests.UnauthorizedSubmit_HasNoSideEffects" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0529095" startTime="2026-11-04T12:58:20.0257060+07:00" endTime="2026-11-04T12:58:20.0790028+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f350c188-c1b5-4d13-bbc9-2dbad94d83f6" />
+    <UnitTestResult executionId="324eae03-36d9-4f5e-a861-644aac358745" testId="b0d98d36-9fb2-0d19-2788-6e213604b34a" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;end&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0002941" startTime="2026-11-04T12:58:17.4392595+07:00" endTime="2026-11-04T12:58:17.4393382+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="324eae03-36d9-4f5e-a861-644aac358745" />
+    <UnitTestResult executionId="4a99efb4-88a4-4595-a51e-f1581340c8a9" testId="2c8ae531-b056-4f87-1187-33ee59455989" testName="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Draft, expected: True)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000060" startTime="2026-11-04T12:58:17.4784782+07:00" endTime="2026-11-04T12:58:17.4785283+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a99efb4-88a4-4595-a51e-f1581340c8a9" />
+    <UnitTestResult executionId="7d89e6a9-70f3-497c-be6a-170cf88ce3dc" testId="2d7d83bf-7513-743b-fcae-806082e346a3" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;attachment&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0091349" startTime="2026-11-04T12:58:17.4102692+07:00" endTime="2026-11-04T12:58:17.4270094+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d89e6a9-70f3-497c-be6a-170cf88ce3dc" />
+    <UnitTestResult executionId="6b2db6ac-4318-4f54-9db2-7e51d881130d" testId="4ff1de11-7233-2785-3063-6e4913f0655b" testName="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Rejected, expected: False)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0002597" startTime="2026-11-04T12:58:17.4782763+07:00" endTime="2026-11-04T12:58:17.4783649+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b2db6ac-4318-4f54-9db2-7e51d881130d" />
+    <UnitTestResult executionId="3d53c2ad-bd4f-43be-ad6b-a935434b29e9" testId="d8cb04ce-d863-4539-8f48-7b03ebd59e91" testName="QTKD.Tests.Unit.ContractRulesTests.CTR03_OnlyDraftToPendingApprovalIsSupported(from: Draft, to: Approved, expected: False)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0003454" startTime="2026-11-04T12:58:17.4773348+07:00" endTime="2026-11-04T12:58:17.4774516+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d53c2ad-bd4f-43be-ad6b-a935434b29e9" />
+    <UnitTestResult executionId="54bfa4d8-2e20-4e7c-a55b-f2c89c0ec294" testId="d947badc-1f92-b339-54f9-5da1a412ecb9" testName="QTKD.Tests.Unit.ContractRulesTests.CTR03_OnlyDraftToPendingApprovalIsSupported(from: PendingApproval, to: PendingApproval, expected: False)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0027711" startTime="2026-11-04T12:58:17.4421878+07:00" endTime="2026-11-04T12:58:17.4422297+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54bfa4d8-2e20-4e7c-a55b-f2c89c0ec294" />
+    <UnitTestResult executionId="07526bb2-f7c9-4167-ab96-0e609b3f1462" testId="42ea1e9f-0f4c-92c9-1298-27760d786a12" testName="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;dates&quot;)" computerName="DESKTOP-OP1BCTV" duration="00:00:00.0000073" startTime="2026-11-04T12:58:17.4404006+07:00" endTime="2026-11-04T12:58:17.4404484+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07526bb2-f7c9-4167-ab96-0e609b3f1462" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.Pricing_ValidItemPersists_NegativeAndDuplicateAreRejected" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="9250afe2-4216-9e7f-3e1a-aaa226d9a484">
+      <Execution id="8760aee0-9725-4e68-889a-cf87bd3271d2" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="Pricing_ValidItemPersists_NegativeAndDuplicateAreRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR03_OnlyDraftToPendingApprovalIsSupported(from: Draft, to: PendingApproval, expected: True)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="73e8fec5-9e0d-c23c-6058-581051a80c80">
+      <Execution id="f8869cef-8b9b-4d6f-a5d8-4d3c92a09582" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR03_OnlyDraftToPendingApprovalIsSupported" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;end&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="b0d98d36-9fb2-0d19-2788-6e213604b34a">
+      <Execution id="324eae03-36d9-4f5e-a861-644aac358745" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;PUT&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="dfbbd327-5f9f-b817-b557-8a870dd756b1">
+      <Execution id="fb441fe6-0d79-403a-8e2c-a58db8d65dc1" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC07_DirectApproved_IsExplicitlyRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Draft, expected: True)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="2c8ae531-b056-4f87-1187-33ee59455989">
+      <Execution id="4a99efb4-88a4-4595-a51e-f1581340c8a9" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR01_EditRequiresEditableState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;attachment&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="2d7d83bf-7513-743b-fcae-806082e346a3">
+      <Execution id="7d89e6a9-70f3-497c-be6a-170cf88ce3dc" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC06_FullWeek06Demo_RepairThenSubmitAndReadState" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="feeaf125-4268-78db-47e2-ab7b1a9df9b2">
+      <Execution id="e46e9dbb-d6f8-4cab-a0b3-7983be79975f" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC06_FullWeek06Demo_RepairThenSubmitAndReadState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_CompleteContractHasNoErrors" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="ee3f44e6-4ceb-23cb-35e7-733af00bb1ec">
+      <Execution id="b4d9d68a-9cdc-48a5-83de-5b724963d5fd" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_CompleteContractHasNoErrors" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;dates&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="42ea1e9f-0f4c-92c9-1298-27760d786a12">
+      <Execution id="07526bb2-f7c9-4167-ab96-0e609b3f1462" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC03_EditDraft_PersistsChanges" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="317f5b89-43d5-be63-4afb-b62386173820">
+      <Execution id="a0ca25fc-03f8-47c4-8511-1e92373b530d" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC03_EditDraft_PersistsChanges" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC08_RepeatedSubmit_CreatesOneApprovalAndHistory" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="ab379072-96dd-bc34-986a-031b155be3e0">
+      <Execution id="c05a790a-be72-43fd-9872-0509985f7776" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC08_RepeatedSubmit_CreatesOneApprovalAndHistory" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: RevisionRequested, expected: True)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="a58e25c5-1eeb-d147-300a-1b2ee50cbf19">
+      <Execution id="717ebe1c-a005-486a-a620-e5ee7efd0c75" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR01_EditRequiresEditableState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;inactive&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="dd44df80-2590-e45a-5609-5673d83d982f">
+      <Execution id="a80ad56e-a629-48ea-9ce9-8ad82597843f" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.UnauthorizedSubmit_HasNoSideEffects" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="69213107-0898-4075-78c7-55db5859fee0">
+      <Execution id="f350c188-c1b5-4d13-bbc9-2dbad94d83f6" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="UnauthorizedSubmit_HasNoSideEffects" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC01_CreateCustomer_PersistsAndCanBeRead" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="5490668e-55d9-dd76-72ee-c6a5bcc3de13">
+      <Execution id="eb384bf9-3423-4a6f-bbd0-e485ff755bbf" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC01_CreateCustomer_PersistsAndCanBeRead" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;name&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="cdfa0e0d-faf2-e5aa-210e-0ac9bf12bdd3">
+      <Execution id="6d65eaf7-edf4-4c94-8405-b0dee3dc0d26" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;content&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="bd1c7d77-e918-1666-94bb-5c770ff74888">
+      <Execution id="0edf4b23-7b68-4eb2-842a-2c5885666fc6" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;start&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="679f8b6c-e560-8f49-173e-5c62478f14f8">
+      <Execution id="814e9367-43dd-428d-9c45-2680a9a07d51" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR02_MissingConditionIsRejected(condition: &quot;customer&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="73af3956-c7e7-bea9-cd9c-3bfad53c9575">
+      <Execution id="ef58041f-3dd5-472a-ae4e-ad88191af01d" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR02_MissingConditionIsRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC05_MissingSubmissionData_ReportsErrorsAndKeepsDraft" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="9ecb4594-c16a-a574-4bd1-137daa6da17a">
+      <Execution id="26998122-a4e9-4742-89c9-74bab9f094f6" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC05_MissingSubmissionData_ReportsErrorsAndKeepsDraft" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC04_EditPending_IsRejectedWithoutMutation" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="21eab722-1f52-b225-b887-6d16235e6275">
+      <Execution id="8a8902a1-cfbf-40b6-987f-7f4927c96b92" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC04_EditPending_IsRejectedWithoutMutation" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Rejected, expected: False)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="4ff1de11-7233-2785-3063-6e4913f0655b">
+      <Execution id="6b2db6ac-4318-4f54-9db2-7e51d881130d" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR01_EditRequiresEditableState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC07_DirectApproved_IsExplicitlyRejected(method: &quot;POST&quot;)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="9526848c-e6f0-5d05-f2ca-2d23aaaed8ea">
+      <Execution id="96526f73-9f85-4854-a79e-ccb10772fa2c" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC07_DirectApproved_IsExplicitlyRejected" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR03_OnlyDraftToPendingApprovalIsSupported(from: Draft, to: Approved, expected: False)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="d8cb04ce-d863-4539-8f48-7b03ebd59e91">
+      <Execution id="3d53c2ad-bd4f-43be-ad6b-a935434b29e9" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR03_OnlyDraftToPendingApprovalIsSupported" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.TC02_EmptyCustomer_IsRejectedWithoutInsert" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="541df43d-4ea1-fa82-b10e-90af801d3665">
+      <Execution id="cdfe81df-5cf8-4d03-ac73-7684500a472c" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="TC02_EmptyCustomer_IsRejectedWithoutInsert" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Active, expected: False)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="d0b0cf14-1278-051b-4ac7-0fea8f4e7e7c">
+      <Execution id="d36a5b11-4346-4192-8b60-edd0ef4ff369" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR01_EditRequiresEditableState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Integration.WorkflowTests.ConcurrentSubmit_SameKeyCreatesOneResult" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="dc16e1cc-83b6-c411-5e1d-a544a834daff">
+      <Execution id="6f04096b-c771-4244-861a-e1a9af6a189a" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Integration.WorkflowTests" name="ConcurrentSubmit_SameKeyCreatesOneResult" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: PendingApproval, expected: False)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="d7813019-c4e8-e565-5821-1352b7c7272a">
+      <Execution id="3b4f2dff-38e4-4426-a8dd-25f3dffb57f1" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR01_EditRequiresEditableState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR01_EditRequiresEditableState(status: Approved, expected: False)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="cd45b635-1a1b-1e64-0d75-59329da6bc8c">
+      <Execution id="f8577a8c-f9f3-4bb1-ae4d-8e67f84917dc" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR01_EditRequiresEditableState" />
+    </UnitTest>
+    <UnitTest name="QTKD.Tests.Unit.ContractRulesTests.CTR03_OnlyDraftToPendingApprovalIsSupported(from: PendingApproval, to: PendingApproval, expected: False)" storage="/home/daniel/projects/th7/tests/qtkd.tests/bin/debug/net10.0/qtkd.tests.dll" id="d947badc-1f92-b339-54f9-5da1a412ecb9">
+      <Execution id="54bfa4d8-2e20-4e7c-a55b-f2c89c0ec294" />
+      <TestMethod codeBase="/home/daniel/projects/TH7/tests/QTKD.Tests/bin/Debug/net10.0/QTKD.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="QTKD.Tests.Unit.ContractRulesTests" name="CTR03_OnlyDraftToPendingApprovalIsSupported" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="cd45b635-1a1b-1e64-0d75-59329da6bc8c" executionId="f8577a8c-f9f3-4bb1-ae4d-8e67f84917dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="679f8b6c-e560-8f49-173e-5c62478f14f8" executionId="814e9367-43dd-428d-9c45-2680a9a07d51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc16e1cc-83b6-c411-5e1d-a544a834daff" executionId="6f04096b-c771-4244-861a-e1a9af6a189a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5490668e-55d9-dd76-72ee-c6a5bcc3de13" executionId="eb384bf9-3423-4a6f-bbd0-e485ff755bbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ecb4594-c16a-a574-4bd1-137daa6da17a" executionId="26998122-a4e9-4742-89c9-74bab9f094f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee3f44e6-4ceb-23cb-35e7-733af00bb1ec" executionId="b4d9d68a-9cdc-48a5-83de-5b724963d5fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="541df43d-4ea1-fa82-b10e-90af801d3665" executionId="cdfe81df-5cf8-4d03-ac73-7684500a472c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a58e25c5-1eeb-d147-300a-1b2ee50cbf19" executionId="717ebe1c-a005-486a-a620-e5ee7efd0c75" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73e8fec5-9e0d-c23c-6058-581051a80c80" executionId="f8869cef-8b9b-4d6f-a5d8-4d3c92a09582" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73af3956-c7e7-bea9-cd9c-3bfad53c9575" executionId="ef58041f-3dd5-472a-ae4e-ad88191af01d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="317f5b89-43d5-be63-4afb-b62386173820" executionId="a0ca25fc-03f8-47c4-8511-1e92373b530d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd44df80-2590-e45a-5609-5673d83d982f" executionId="a80ad56e-a629-48ea-9ce9-8ad82597843f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21eab722-1f52-b225-b887-6d16235e6275" executionId="8a8902a1-cfbf-40b6-987f-7f4927c96b92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7813019-c4e8-e565-5821-1352b7c7272a" executionId="3b4f2dff-38e4-4426-a8dd-25f3dffb57f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdfa0e0d-faf2-e5aa-210e-0ac9bf12bdd3" executionId="6d65eaf7-edf4-4c94-8405-b0dee3dc0d26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd1c7d77-e918-1666-94bb-5c770ff74888" executionId="0edf4b23-7b68-4eb2-842a-2c5885666fc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9526848c-e6f0-5d05-f2ca-2d23aaaed8ea" executionId="96526f73-9f85-4854-a79e-ccb10772fa2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab379072-96dd-bc34-986a-031b155be3e0" executionId="c05a790a-be72-43fd-9872-0509985f7776" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9250afe2-4216-9e7f-3e1a-aaa226d9a484" executionId="8760aee0-9725-4e68-889a-cf87bd3271d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="feeaf125-4268-78db-47e2-ab7b1a9df9b2" executionId="e46e9dbb-d6f8-4cab-a0b3-7983be79975f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0b0cf14-1278-051b-4ac7-0fea8f4e7e7c" executionId="d36a5b11-4346-4192-8b60-edd0ef4ff369" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfbbd327-5f9f-b817-b557-8a870dd756b1" executionId="fb441fe6-0d79-403a-8e2c-a58db8d65dc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69213107-0898-4075-78c7-55db5859fee0" executionId="f350c188-c1b5-4d13-bbc9-2dbad94d83f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0d98d36-9fb2-0d19-2788-6e213604b34a" executionId="324eae03-36d9-4f5e-a861-644aac358745" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c8ae531-b056-4f87-1187-33ee59455989" executionId="4a99efb4-88a4-4595-a51e-f1581340c8a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d7d83bf-7513-743b-fcae-806082e346a3" executionId="7d89e6a9-70f3-497c-be6a-170cf88ce3dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ff1de11-7233-2785-3063-6e4913f0655b" executionId="6b2db6ac-4318-4f54-9db2-7e51d881130d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d8cb04ce-d863-4539-8f48-7b03ebd59e91" executionId="3d53c2ad-bd4f-43be-ad6b-a935434b29e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d947badc-1f92-b339-54f9-5da1a412ecb9" executionId="54bfa4d8-2e20-4e7c-a55b-f2c89c0ec294" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42ea1e9f-0f4c-92c9-1298-27760d786a12" executionId="07526bb2-f7c9-4167-ab96-0e609b3f1462" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="30" executed="30" passed="30" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.12)
+[xUnit.net 00:00:00.09]   Discovering: QTKD.Tests
+[xUnit.net 00:00:00.16]   Discovered:  QTKD.Tests
+[xUnit.net 00:00:00.19]   Starting:    QTKD.Tests
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/daniel/projects/TH7/QTKD.Api
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 285.3322ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 341.9299ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/customers/9eb6a281-b66a-4fac-88eb-45525ab83653 - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.GetById (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetById", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."Name", c."Status"
+      FROM customers AS c
+      WHERE c."Id" = @id
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.GetById (QTKD.Api) in 253.3242ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.GetById (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/customers/9eb6a281-b66a-4fac-88eb-45525ab83653 - 200 - application/json;+charset=utf-8 261.3709ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/price-lists - application/json;+charset=utf-8 51
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.PriceListsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "PriceLists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreatePriceListRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.PriceListsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Date), @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO price_lists ("Id", "EffectiveDate", "Name")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type 'QTKD.Api.Models.PriceList'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.PriceListsController.Create (QTKD.Api) in 46.5041ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.PriceListsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/price-lists - 201 - application/json;+charset=utf-8 52.5901ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - application/json;+charset=utf-8 37
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "AddItem", controller = "PriceLists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddItem(System.Guid, QTKD.Api.Contracts.CreatePriceItemRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.PriceListsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM price_lists AS p
+          WHERE p."Id" = @id)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api) in 33.9486ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - 400 - application/problem+json;+charset=utf-8 39.9142ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - application/json;+charset=utf-8 41
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "AddItem", controller = "PriceLists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddItem(System.Guid, QTKD.Api.Contracts.CreatePriceItemRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.PriceListsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM price_lists AS p
+          WHERE p."Id" = @id)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid), @serviceCode='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM price_items AS p
+          WHERE p."PriceListId" = @id AND p."ServiceCode" = @serviceCode)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO price_items ("Id", "PriceListId", "ServiceCode", "UnitPrice")
+      VALUES (@p0, @p1, @p2, @p3);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType5`4[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api) in 32.7389ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - 201 - application/json;+charset=utf-8 33.0284ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - application/json;+charset=utf-8 37
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "AddItem", controller = "PriceLists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddItem(System.Guid, QTKD.Api.Contracts.CreatePriceItemRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.PriceListsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM price_lists AS p
+          WHERE p."Id" = @id)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid), @serviceCode='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM price_items AS p
+          WHERE p."PriceListId" = @id AND p."ServiceCode" = @serviceCode)
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ConflictObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api) in 3.0587ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.PriceListsController.AddItem (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - 409 - application/problem+json;+charset=utf-8 3.2887ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.PriceListsController.GetItems (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetItems", controller = "PriceLists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.PriceListsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM price_lists AS p
+          WHERE p."Id" = @id)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."PriceListId", p."ServiceCode", p."UnitPrice"
+      FROM price_items AS p
+      WHERE p."PriceListId" = @id
+      ORDER BY p."ServiceCode"
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[&lt;&gt;f__AnonymousType5`4[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], QTKD.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.PriceListsController.GetItems (QTKD.Api) in 14.3048ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.PriceListsController.GetItems (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/price-lists/b2fe532d-fc1a-4734-a23e-17b16e49a777/items - 200 - application/json;+charset=utf-8 20.5438ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 3.1325ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 3.7519ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 55.8608ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 61.9731ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 262
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ConflictObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 2.6663ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 409 - application/json;+charset=utf-8 2.9752ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.9239ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 2.1757ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 3.9226ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 4.1844ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 PUT http://localhost/api/contracts/2a81d27c-dd56-488c-8822-e4d11f7b5dc3 - application/json;+charset=utf-8 262
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Update", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, QTKD.Api.Contracts.UpdateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status"
+      FROM contracts AS c
+      WHERE c."Id" = @p
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ConflictObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Update (QTKD.Api) in 41.3143ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 PUT http://localhost/api/contracts/2a81d27c-dd56-488c-8822-e4d11f7b5dc3 - 409 - application/json;+charset=utf-8 46.9098ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.6692ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 1.9059ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 2.91ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 3.1112ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/4aaa6ea3-4b5a-4296-87d9-20afb9b6ab22/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Guid), @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?' (DbType = DateTime), @p11='?', @p13='?' (DbType = Guid), @p12='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO approval_requests ("Id", "ContractId", "IdempotencyKey", "Status", "SubmittedAtUtc", "SubmittedBy")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+      INSERT INTO contract_history ("Id", "Action", "ContractId", "Details", "OccurredAtUtc", "PerformedBy")
+      VALUES (@p6, @p7, @p8, @p9, @p10, @p11);
+      UPDATE contracts SET "Status" = @p12
+      WHERE "Id" = @p13;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Contracts.SubmitContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 102.6508ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/4aaa6ea3-4b5a-4296-87d9-20afb9b6ab22/submit - 200 - application/json;+charset=utf-8 108.3091ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 PUT http://localhost/api/contracts/4aaa6ea3-4b5a-4296-87d9-20afb9b6ab22 - application/json;+charset=utf-8 215
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Update", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, QTKD.Api.Contracts.UpdateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status"
+      FROM contracts AS c
+      WHERE c."Id" = @p
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ConflictObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Update (QTKD.Api) in 2.9333ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 PUT http://localhost/api/contracts/4aaa6ea3-4b5a-4296-87d9-20afb9b6ab22 - 409 - application/problem+json;+charset=utf-8 3.1527ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 30
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 0.9009ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 400 - application/problem+json;+charset=utf-8 1.1081ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.7113ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 1.8976ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 21.2243ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 21.4390ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/c63b0eb9-f85e-43ac-94a1-8513ce7bc162/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 0.734ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/c63b0eb9-f85e-43ac-94a1-8513ce7bc162/submit - 403 - application/problem+json;+charset=utf-8 2.9451ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.6736ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 1.9476ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 215
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 2.7682ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 2.9643ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing BadRequestObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IReadOnlyList`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 3.7313ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d/submit - 400 - application/json;+charset=utf-8 3.9103ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 PUT http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Update", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, QTKD.Api.Contracts.UpdateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status"
+      FROM contracts AS c
+      WHERE c."Id" = @p
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?', @p1='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE contracts SET "AttachmentReference" = @p0, "ContentSummary" = @p1
+      WHERE "Id" = @p2;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Update (QTKD.Api) in 2.6954ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 PUT http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d - 200 - application/json;+charset=utf-8 2.8772ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Guid), @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?' (DbType = DateTime), @p11='?', @p13='?' (DbType = Guid), @p12='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO approval_requests ("Id", "ContractId", "IdempotencyKey", "Status", "SubmittedAtUtc", "SubmittedBy")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+      INSERT INTO contract_history ("Id", "Action", "ContractId", "Details", "OccurredAtUtc", "PerformedBy")
+      VALUES (@p6, @p7, @p8, @p9, @p10, @p11);
+      UPDATE contracts SET "Status" = @p12
+      WHERE "Id" = @p13;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Contracts.SubmitContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 3.094ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d/submit - 200 - application/json;+charset=utf-8 3.2529ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.GetById (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetById", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."ContractNo", c."CustomerId", c0."Name", c."StartDate", c."EndDate", c."ServiceGroup", c."ContentSummary", c."AttachmentReference", c."Status", (
+          SELECT a."Id"
+          FROM approval_requests AS a
+          WHERE c."Id" = a."ContractId"
+          LIMIT 1)
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @id
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Controllers.ContractsController+ContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.GetById (QTKD.Api) in 21.5987ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.GetById (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/contracts/832de9bd-347d-4901-b374-0d5cc6cd824d - 200 - application/json;+charset=utf-8 27.2203ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 2.0736ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 2.4167ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 3.0546ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 3.5450ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/f386ee7d-3ddf-4845-849c-ad95a3b7fc35/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Guid), @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?' (DbType = DateTime), @p11='?', @p13='?' (DbType = Guid), @p12='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO approval_requests ("Id", "ContractId", "IdempotencyKey", "Status", "SubmittedAtUtc", "SubmittedBy")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+      INSERT INTO contract_history ("Id", "Action", "ContractId", "Details", "OccurredAtUtc", "PerformedBy")
+      VALUES (@p6, @p7, @p8, @p9, @p10, @p11);
+      UPDATE contracts SET "Status" = @p12
+      WHERE "Id" = @p13;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Contracts.SubmitContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 3.3093ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/f386ee7d-3ddf-4845-849c-ad95a3b7fc35/submit - 200 - application/json;+charset=utf-8 3.4656ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/f386ee7d-3ddf-4845-849c-ad95a3b7fc35/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Contracts.SubmitContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 2.5701ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/f386ee7d-3ddf-4845-849c-ad95a3b7fc35/submit - 200 - application/json;+charset=utf-8 2.7173ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/f386ee7d-3ddf-4845-849c-ad95a3b7fc35/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ConflictObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 2.1691ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/f386ee7d-3ddf-4845-849c-ad95a3b7fc35/submit - 409 - application/json;+charset=utf-8 2.2974ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.7552ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 1.9697ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 2.7005ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 2.8872ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/516d1861-bffc-4dfc-a265-46afd8c6b8aa/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/516d1861-bffc-4dfc-a265-46afd8c6b8aa/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Guid), @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?' (DbType = DateTime), @p11='?', @p13='?' (DbType = Guid), @p12='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO approval_requests ("Id", "ContractId", "IdempotencyKey", "Status", "SubmittedAtUtc", "SubmittedBy")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+      INSERT INTO contract_history ("Id", "Action", "ContractId", "Details", "OccurredAtUtc", "PerformedBy")
+      VALUES (@p6, @p7, @p8, @p9, @p10, @p11);
+      UPDATE contracts SET "Status" = @p12
+      WHERE "Id" = @p13;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Contracts.SubmitContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 3.5792ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/516d1861-bffc-4dfc-a265-46afd8c6b8aa/submit - 200 - application/json;+charset=utf-8 3.7847ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'QTKD.Api.Contracts.SubmitContractResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 6.4818ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/516d1861-bffc-4dfc-a265-46afd8c6b8aa/submit - 200 - application/json;+charset=utf-8 6.5995ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.7415ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 2.3122ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 215
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 3.2016ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 3.4036ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 PUT http://localhost/api/contracts/7ae02980-0e4e-4e74-a30c-3d7ca157c3c2 - application/json;+charset=utf-8 256
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Update", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, QTKD.Api.Contracts.UpdateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status"
+      FROM contracts AS c
+      WHERE c."Id" = @p
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?', @p1='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE contracts SET "AttachmentReference" = @p0, "ContentSummary" = @p1
+      WHERE "Id" = @p2;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Update (QTKD.Api) in 2.7428ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Update (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 PUT http://localhost/api/contracts/7ae02980-0e4e-4e74-a30c-3d7ca157c3c2 - 200 - application/json;+charset=utf-8 2.9141ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/customers - application/json;+charset=utf-8 56
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateCustomerRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.CustomersController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO customers ("Id", "Name", "Status")
+      VALUES (@p0, @p1, @p2);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType4`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.CustomersController.Create (QTKD.Api) in 1.5944ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.CustomersController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/customers - 201 - application/json;+charset=utf-8 1.8407ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts - application/json;+charset=utf-8 215
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Create", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(QTKD.Api.Contracts.CreateContractRequest, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@customerId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM customers AS c
+          WHERE c."Id" = @customerId AND c."Status" = 'Active')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@normalizedContractNo='?'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM contracts AS c
+          WHERE c."ContractNo" = @normalizedContractNo)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Date), @p6='?', @p7='?' (DbType = Date), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO contracts ("Id", "AttachmentReference", "ContentSummary", "ContractNo", "CustomerId", "EndDate", "ServiceGroup", "StartDate", "Status")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing CreatedAtActionResult, writing value of type '&lt;&gt;f__AnonymousType2`3[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Create (QTKD.Api) in 2.6794ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Create (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts - 201 - application/json;+charset=utf-8 2.8688ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/contracts/79584dd2-9b06-49cb-b9bb-b0626b0c08ff/submit - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Submit", controller = "Contracts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Submit(System.Guid, System.Threading.CancellationToken) on controller QTKD.Api.Controllers.ContractsController (QTKD.Api).
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid), @idempotencyKey='?'], CommandType='Text', CommandTimeout='30']
+      SELECT a."Id", a."ContractId", a."IdempotencyKey", a."Status", a."SubmittedAtUtc", a."SubmittedBy"
+      FROM approval_requests AS a
+      WHERE a."ContractId" = @contractId AND a."IdempotencyKey" = @idempotencyKey
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@contractId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."AttachmentReference", c."ContentSummary", c."ContractNo", c."CustomerId", c."EndDate", c."ServiceGroup", c."StartDate", c."Status", c0."Id", c0."Name", c0."Status"
+      FROM contracts AS c
+      INNER JOIN customers AS c0 ON c."CustomerId" = c0."Id"
+      WHERE c."Id" = @contractId
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing BadRequestObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IReadOnlyList`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api) in 2.0591ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'QTKD.Api.Controllers.ContractsController.Submit (QTKD.Api)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/contracts/79584dd2-9b06-49cb-b9bb-b0626b0c08ff/submit - 400 - application/json;+charset=utf-8 2.2324ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[xUnit.net 00:00:03.08]   Finished:    QTKD.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -33,6 +33,9 @@ public sealed class ContractsController(QtkdDbContext dbContext, ContractSubmiss
     [HttpPost]
     public async Task<IActionResult> Create(CreateContractRequest request, CancellationToken cancellationToken)
     {
+        if (request.Status is not null && request.Status != ContractStatus.Draft)
+            return Conflict(new { code = "CONTRACT_STATE_INVALID", message = "Hợp đồng mới phải ở Draft (CTR-03)." });
+
         ValidateContractRequest(request.ContractNo, request.CustomerId, request.StartDate, request.EndDate);
         if (!ModelState.IsValid) return ValidationProblem(ModelState);
 
@@ -80,7 +83,7 @@ public sealed class ContractsController(QtkdDbContext dbContext, ContractSubmiss
         var contract = await dbContext.Contracts.FindAsync([id], cancellationToken);
         if (contract is null) return NotFound();
 
-        if (contract.Status is not (ContractStatus.Draft or ContractStatus.RevisionRequested))
+        if (!ContractRules.CanEdit(contract.Status))
         {
             return Conflict(new ProblemDetails
             {
@@ -89,6 +92,9 @@ public sealed class ContractsController(QtkdDbContext dbContext, ContractSubmiss
                 Detail = $"Chỉ Draft hoặc RevisionRequested được phép sửa; trạng thái hiện tại là {contract.Status}."
             });
         }
+
+        if (request.Status is not null && request.Status != contract.Status)
+            return Conflict(new { code = "CONTRACT_STATE_INVALID", message = "Thay đổi trạng thái phải thông qua thao tác nghiệp vụ (CTR-03)." });
 
         ValidateContractRequest(contract.ContractNo, request.CustomerId, request.StartDate, request.EndDate);
         if (!ModelState.IsValid) return ValidationProblem(ModelState);
